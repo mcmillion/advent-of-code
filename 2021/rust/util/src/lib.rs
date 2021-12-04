@@ -14,3 +14,7 @@ pub fn load_inputs_as_string_array() -> Vec<String> {
 
     inputs
 }
+
+pub fn this_is_a_test() {
+    println!("thing");
+}
