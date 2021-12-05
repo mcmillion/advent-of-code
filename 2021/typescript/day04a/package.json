@@ -2,13 +2,15 @@
   "name": "advent-of-code-2021",
   "version": "1.0.0",
   "description": "Advent of Code 2021",
+  "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node --loader ts-node/esm ./src/index.ts",
     "lint": "eslint src --ext ts"
   },
   "author": "Matthew McMillion <matthew@mcmillion.io>",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^16.11.11",
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
     "eslint": "^7.32.0",
